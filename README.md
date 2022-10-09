@@ -39,3 +39,23 @@ Finally, the total time complexity is
 $$
 O(\sum_{i=1}^{p}m_i + n * max(m_i))
 $$
+
+## `Suffix Trie`
+
+Preprocessing for calculating **SuffixTrie(text)** using all the suffixes of the text
+
+$$
+O(n^2)
+$$
+
+Pattern Matching
+
+$$
+O(\sum_{i=1}^{p}m_i)
+$$
+
+Finally, the total time complexity is
+
+$$
+O(n^2 + \sum_{i=1}^{p}m_i)
+$$

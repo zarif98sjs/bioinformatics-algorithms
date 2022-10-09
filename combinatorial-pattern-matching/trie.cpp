@@ -35,26 +35,27 @@ struct TrieNode {
     }
 
     bool match(string text) {
+        
         TrieNode* curr = this;
         string pattern = "";
+
         for (char c : text) {
             if (curr->children.find(c) == curr->children.end()) {
                 return false;
             }
+
             pattern += c;
-            // cout<<pattern<<endl;
             curr = curr->children[c];
 
             if(curr->isEndOfWord){
                 cout << "Pattern found " << pattern << endl;
             }
-
-            
         }
 
         if(curr->isEndOfWord){
             cout << "Pattern found " << pattern << endl;
         }
+
         return curr->isEndOfWord;
     }
 
