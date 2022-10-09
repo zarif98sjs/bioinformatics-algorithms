@@ -59,3 +59,25 @@ Finally, the total time complexity is
 $$
 O(n^2 + \sum_{i=1}^{p}m_i)
 $$
+
+
+## `Suffix Array`
+
+Preprocessing for calculating **SuffixArray(text)**
+
+$$
+O(n * log(n))
+$$
+
+Pattern Matching
+
+$$
+O(p * log(n))
+$$
+
+Finally, the total time complexity is
+
+$$
+O(n * log(n) + p * log(n)) \\
+= O( (n+p) * log(n)) \\
+$$
