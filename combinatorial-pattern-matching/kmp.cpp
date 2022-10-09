@@ -49,7 +49,7 @@ bool match(string text, string pattern) {
 
     int n = text.size();
     int m = pattern.size();
-    int i = 0; // index for text [ *** this will never go back to the left *** ]
+    int i = 0; // index for text [ *** this will never go back to the left like in bruteforce *** ]
     int j = 0; // index for pattern
     while (i < n) {
         if (text[i] == pattern[j]) {
