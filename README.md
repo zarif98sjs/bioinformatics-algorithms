@@ -23,16 +23,19 @@ $$
 ## `Trie`
 
 Preprocessing for calculating **Trie(patterns)**
+
 $$
 O(\sum_{i=1}^{p}m_i)
 $$
 
 Pattern Matching
+
 $$
 O(n * max(m_i))
 $$
 
 Finally, the total time complexity is
+
 $$
 O(\sum_{i=1}^{p}m_i + n * max(m_i))
 $$
